@@ -1,0 +1,19 @@
+//  https://api.ocr.space/parse/imageurl?url=http://dl.a9t9.com/ocrbenchmark/eng.png&language=eng&apikey=640c8334fe88957
+
+js num=1
+js url = "https://jsonplaceholder.typicode.com/todos/" + num.toString()
+
+// api https://jsonplaceholder.typicode.com/todos/1 
+
+
+
+// js url = "https://jsonplaceholder.typicode.com/todos/1"
+
+
+api url
+echo api_result
+
+
+js obj = JSON.parse(api_result) 
+js result = obj.title
+echo result

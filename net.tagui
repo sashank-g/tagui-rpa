@@ -1,0 +1,18 @@
+// This flow makes a search on google, clicks the first result and screenshots the page
+
+// First, visit google.com
+https://www.google.com/
+
+as = 'AA'
+
+// to use variable we need to use template literal syntax
+type q as `as` [enter]
+echo `as`
+echo as
+ 
+
+// Wait 3 seconds so the page can load
+wait 3
+
+// Save a screenshot of the web page as results.png
+snap page to results.png

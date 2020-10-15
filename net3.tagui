@@ -1,0 +1,21 @@
+
+https://www.excellbroadband.com/userzone.html 
+
+
+type customerid as 21289
+
+type phone as 9866909000
+
+type custip as 172.16.233.50
+
+
+// here we need to get the ocr recognition
+
+snap /html/body/div[1]/div[3]/form/table/tbody/tr[4]/td[4]/img to ocr.png
+
+click //*[@id="form_custzone"]/table/tbody/tr[5]/td[3]/input 
+
+wait 3
+
+snap page to results.png  
+
